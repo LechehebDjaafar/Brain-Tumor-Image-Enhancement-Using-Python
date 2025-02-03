@@ -8,20 +8,16 @@ This project applies multiple image processing techniques using OpenCV and Pytho
 ## Features
 - **Contrast Enhancement**: Uses CLAHE (Contrast Limited Adaptive Histogram Equalization) for improved visibility.
 - **Noise Reduction**: Applies Gaussian Blur to smoothen the image.
+- **Advanced Noise Reduction**: Uses Wavelet Transform for enhanced denoising.
 - **Edge Detection**: Utilizes the Canny edge detection algorithm.
 - **Resolution Enhancement**: Scales up images with bicubic interpolation.
 - **Automatic Image Saving**: Processed images are stored in structured directories.
 
 ## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/yourusername/image-processing-opencv.git
-   cd image-processing-opencv
-   ```
-2. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
+Ensure you have Python installed along with the required dependencies:
+```sh
+pip install opencv-python numpy pillow matplotlib pywavelets
+```
 
 ## Usage
 Run the script with an image path:
@@ -34,11 +30,11 @@ By default, it processes `img2.jpg`. Modify the script to specify another image.
 ### Original vs. Processed Images
 | Original | Contrast Enhanced | Noise Reduced |
 |----------|------------------|--------------|
-| ![Original](Processed_Images/Original/original.jpg) | ![Enhanced](Processed_Images/Contrast_Enhanced/Contrast_Enhanced.jpg) | ![Denoised](Processed_Images/Denoised/denoised.jpg) |
+| ![Original](Processed_Images/Original/Original.jpg) | ![Enhanced](Processed_Images/Contrast_Enhanced/Contrast_Enhanced.jpg) | ![Denoised](Processed_Images/Denoised/Denoised.jpg) |
 
-| Edges Detected | Resized Image | RGB Conversion |
-|---------------|--------------|---------------|
-| ![Edges](Processed_Images/Edges/edges.jpg) | ![Resized](Processed_Images/Resized/resized.jpg) | ![RGB](Processed_Images/RGB/rgb.jpg) |
+| Wavelet Denoised | Edges Detected | Resized Image |
+|-----------------|---------------|--------------|
+| ![Wavelet Denoised](Processed_Images/Wavelet_Denoised/Wavelet_Denoised.jpg) | ![Edges](Processed_Images/Edges/Edges.jpg) | ![Resized](Processed_Images/Resized/Resized.jpg) |
 
 ## Folder Structure
 ```
@@ -49,13 +45,12 @@ image-processing-opencv/
 │── images/
 │── Processed_Images/
 │   ├── Original/
-│   ├── Contrast Enhanced/
+│   ├── Contrast_Enhanced/
 │   ├── Denoised/
+│   ├── Wavelet_Denoised/
 │   ├── Edges/
 │   ├── Resized/
-│   ├── RGB/
 ```
-
 ## Dependencies
 - OpenCV
 - NumPy
