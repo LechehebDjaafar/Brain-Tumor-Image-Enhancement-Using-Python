@@ -80,5 +80,5 @@ def process_image(image_path):
 # Run the script
 if __name__ == "__main__":
     # Specify the path to your image
-    image_path = 'img2.jpg'  # Replace with your image path
+    image_path = 'images\img2.jpg'  # Replace with your image path
     process_image(image_path)
