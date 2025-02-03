@@ -34,11 +34,11 @@ By default, it processes `img2.jpg`. Modify the script to specify another image.
 ### Original vs. Processed Images
 | Original | Contrast Enhanced | Noise Reduced |
 |----------|------------------|--------------|
-| ![Original](Processed_Images/Original/original.jpg) | ![Enhanced](Processed_Images/Contrast_Enhanced/Contrast_Enhanced.jpg) | ![Denoised](Processed_Images/Denoised/denoised.jpg) |
+| ![Original](Processed_Images/Original/Original.jpg) | ![Enhanced](Processed_Images/Contrast_Enhanced/Contrast_Enhanced.jpg) | ![Denoised](Processed_Images/Denoised/Denoised.jpg) |
 
 | Edges Detected | Resized Image | RGB Conversion |
 |---------------|--------------|---------------|
-| ![Edges](Processed_Images/Edges/edges.jpg) | ![Resized](Processed_Images/Resized/resized.jpg) | ![RGB](Processed_Images/RGB/rgb.jpg) |
+| ![Edges](Processed_Images/Edges/Edges.jpg) | ![Resized](Processed_Images/Resized/Resized.jpg) | ![RGB](Processed_Images/RGB/RGB.jpg) |
 
 ## Folder Structure
 ```
